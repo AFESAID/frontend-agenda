@@ -2,6 +2,7 @@ import React from "react"
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Login from "./pages/Login"
+import Users from './pages/Users'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" Component={Login} />
+        <Route path="/users" Component={Users}/>
       </Routes>
     </BrowserRouter>
   )
